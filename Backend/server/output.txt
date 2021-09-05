@@ -1,0 +1,17 @@
+https://www.geeksforgeeks.org/different-ways-reading-text-file-java/
+--------------------------------
+ 
+ 
+import java.io.*;
+public class ReadFromFile2 {
+ public static void main(String args) throws Exception  {
+  
+  
+  
+ File file =  new File( "C:UserspankajDesktoptest.txt" );
+  BufferedReader br =  new BufferedReader( new FileReader(file));
+  String st;
+ while ((st = br.readLine()) !=  null )  System.out.println(st);
+ }
+}
+
